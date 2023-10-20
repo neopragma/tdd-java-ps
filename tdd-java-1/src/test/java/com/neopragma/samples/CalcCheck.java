@@ -1,7 +1,14 @@
-package com.neopragma.tdd2;
+package com.neopragma.samples;
 
 /**
  * Roll-your-own test class for Calc.
+ */
+
+import com.neopragma.tdd2.Calc;
+
+/**
+ * Unit test cases for the sum() method of class Calc
+ * written without a unit test library/framework.
  */
 public class CalcCheck {
     public void runTests() {

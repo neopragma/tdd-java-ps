@@ -1,10 +1,14 @@
-package com.neopragma.tdd2;
+package com.neopragma.samples;
 
+import com.neopragma.tdd2.Calc;
 import net.jqwik.api.ForAll;
 import net.jqwik.api.Property;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * Property test example for the sum() method of class Calc.
+ */
 public class CalcPropertyTest {
 
     @Property(tries=100)

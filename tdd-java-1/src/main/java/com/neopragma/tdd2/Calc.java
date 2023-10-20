@@ -1,5 +1,8 @@
 package com.neopragma.tdd2;
 
+/**
+ * A class to serve as a test subject for various unit test examples.
+ */
 public class Calc {
     public Double sum(Double... val) {
         Double res = 0.0;
