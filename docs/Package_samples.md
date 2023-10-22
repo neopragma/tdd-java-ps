@@ -1,4 +1,4 @@
-# Package samples 
+# Module: tdd-samples, Package: samples 
 
 Purpose: To provide simple examples of various unit tests. 
 
@@ -6,7 +6,7 @@ Under ```src/main/java```, class Calc provides a trivial SUT (system under test)
 
 Class ```LoadAndSortList``` represents code one might write to read lines from a file and load each line into a Java List object, then sort the values and return the sorted List. In keeping with the software design principle, Separation of Concerns, the code in this class does not "know about" files; it only performs the processing for each record. 
 
-Under ```src/test/java``` there are a few unit test examples. 
+Under ```src/test/java``` there are a few unit test examples. Note that the test classes for Calc are intentionally designed to show a test failure (except the PBT example), so you can see how that looks. 
 
 ## Class CalcCheck
 

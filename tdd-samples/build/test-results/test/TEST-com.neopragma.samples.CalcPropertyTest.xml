@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.neopragma.samples.CalcPropertyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-22T16:35:00" hostname="Davids-MacBook-Pro.local" time="0.127">
+  <properties/>
+  <testcase name="orderOfArgumentsDoesNotAffectResult" classname="com.neopragma.samples.CalcPropertyTest" time="0.127"/>
+  <system-out><![CDATA[timestamp = 2023-10-22T09:35:00.749916, CalcPropertyTest:orderOfArgumentsDoesNotAffectResult = 
+                              |-----------------------jqwik-----------------------
+tries = 100                   | # of calls to property
+checks = 100                  | # of not rejected calls
+generation = RANDOMIZED       | parameters are randomly generated
+after-failure = SAMPLE_FIRST  | try previously failed sample, then previous seed
+when-fixed-seed = ALLOW       | fixing the random seed is allowed
+edge-cases#mode = MIXIN       | edge cases are mixed in
+edge-cases#total = 147        | # of all combined edge cases
+edge-cases#tried = 13         | # of edge cases tried in current run
+seed = 1904748902214484499    | random seed to reproduce generated values
+
+
+]]></system-out>
+  <system-err><![CDATA[Oct 22, 2023 9:35:00 AM net.jqwik.engine.properties.RandomizedShrinkablesGenerator logEdgeCasesOutnumberTriesIfApplicable
+INFO: Edge case generation exceeds number of tries. Stopped after 147 generated cases.
+]]></system-err>
+</testsuite>

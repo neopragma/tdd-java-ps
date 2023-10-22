@@ -1,4 +1,4 @@
-# Package checksetup 
+# Module: tdd-samples, Package: checksetup 
 
 Purpse: See if we have our JUnit dependencies defined correctly.
 
