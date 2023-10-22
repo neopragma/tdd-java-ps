@@ -10,5 +10,11 @@ Examples for coding various unit/microtests using JUnit, Mockito, and JQwik.
 
 Starter code for an exercise to use TDD for greenfield development. 
 
+## Module tdd-rpn
 
+Starter code for an exercise to use TDD for greenfield development. 
+
+## Module tdd-gildedrose
+
+Starter code for an exertice to use TDD to approach modifications to existing code.
 
