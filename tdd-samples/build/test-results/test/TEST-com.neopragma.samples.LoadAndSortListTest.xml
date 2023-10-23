@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.neopragma.samples.LoadAndSortListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-22T16:35:00" hostname="Davids-MacBook-Pro.local" time="0.549">
+<testsuite name="com.neopragma.samples.LoadAndSortListTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-23T14:40:43" hostname="Davids-MacBook-Pro.local" time="0.53">
   <properties/>
-  <testcase name="itReturnsTheInputValuesAsASortedList()" classname="com.neopragma.samples.LoadAndSortListTest" time="0.549"/>
+  <testcase name="itReturnsTheInputValuesAsASortedList()" classname="com.neopragma.samples.LoadAndSortListTest" time="0.53"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

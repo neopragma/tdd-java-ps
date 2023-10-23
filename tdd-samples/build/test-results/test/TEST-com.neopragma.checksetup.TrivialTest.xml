@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.neopragma.checksetup.TrivialTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-10-22T16:35:00" hostname="Davids-MacBook-Pro.local" time="0.0">
+<testsuite name="com.neopragma.checksetup.TrivialTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-10-23T14:40:42" hostname="Davids-MacBook-Pro.local" time="0.009">
   <properties/>
-  <testcase name="is_junit_set_up()" classname="com.neopragma.checksetup.TrivialTest" time="0.0">
+  <testcase name="is_junit_set_up()" classname="com.neopragma.checksetup.TrivialTest" time="0.009">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;This is not trivial.&gt; but was: &lt;This is trivial.&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;This is not trivial.&gt; but was: &lt;This is trivial.&gt;
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
