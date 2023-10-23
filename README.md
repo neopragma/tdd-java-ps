@@ -4,7 +4,7 @@ See the [Course Notes](docs/Course_Notes.md) for guidance on getting the most fr
 
 ## Module tdd-samples 
 
-Examples for coding various unit/microtests using JUnit, Mockito, and JQwik.
+Examples for coding various unit/microtests using JUnit, Mockito, and JQwik. [Notes](docs/Package_samples.md)
 
 ## Module tdd-fizzbuzz 
 
