@@ -8,6 +8,8 @@ Class ```LoadAndSortList``` represents code one might write to read lines from a
 
 Under ```src/test/java``` there are a few unit test examples. Note that the test classes for Calc are intentionally designed to show a test failure (except the PBT example), so you can see how that looks. 
 
+Under ```src/integrationTest/java``` there is a sample integration test written with JUnit. This is not the sort of microtest you would write for TDD, but it is provided for reference. 
+
 ## Class CalcCheck
 
 ```CalcCheck``` can be executed as a main program. It contains two microtests, both coded in method _runTests()_. This class illustrates an approach to writing microtests without the use of a unit testing library or framework. 
