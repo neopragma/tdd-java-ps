@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.neopragma.samples.LoadAndSortListIT" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-10-23T15:07:43" hostname="Davids-MacBook-Pro.local" time="0.432">
+<testsuite name="com.neopragma.samples.LoadAndSortListIT" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-10-23T15:15:34" hostname="Davids-MacBook-Pro.local" time="0.01">
   <properties/>
-  <testcase name="itReturnsTheInputValuesAsASortedList()" classname="com.neopragma.samples.LoadAndSortListIT" time="0.432">
+  <testcase name="itReturnsTheInputValuesAsASortedList()" classname="com.neopragma.samples.LoadAndSortListIT" time="0.01">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;[Atlanta, Baltimore, Chicago, Poughkeepsie]&gt; but was: &lt;[Atlanta, Baltimore, Chicago, Hartford]&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;[Atlanta, Baltimore, Chicago, Poughkeepsie]&gt; but was: &lt;[Atlanta, Baltimore, Chicago, Hartford]&gt;
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -9,7 +9,7 @@
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
 	at app//org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
 	at app//org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1141)
-	at app//com.neopragma.samples.LoadAndSortListIT.itReturnsTheInputValuesAsASortedList(LoadAndSortListIT.java:28)
+	at app//com.neopragma.samples.LoadAndSortListIT.itReturnsTheInputValuesAsASortedList(LoadAndSortListIT.java:21)
 	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.17/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.17/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
