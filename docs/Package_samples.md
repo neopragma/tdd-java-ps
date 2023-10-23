@@ -24,7 +24,7 @@ Learning goal: Get a basic sense of how a unit testing library can simplify the 
 
 ## Class CalcRefactoredTest 
 
-This is the same as ```CalcTest``` after smoe basic refactoring was performed to reduce duplication. It illustrates another JUnit annotation, @BeforeEach, that causes the annotated method to be executed before each test case.
+This is the same as ```CalcTest``` after some basic refactoring was performed to reduce duplication. It illustrates another JUnit annotation, @BeforeEach, that causes the annotated method to be executed before each test case.
 
 Learning goal: Gain a basic sense of how refactoring can simplify the design, reduce the number of lines of code, and enhance readability of the test suite.
 

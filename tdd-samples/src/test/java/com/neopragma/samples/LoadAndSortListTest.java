@@ -27,8 +27,7 @@ public class LoadAndSortListTest {
                 .thenReturn("Atlanta")
                 .thenReturn(null);
         List<String> expected = new ArrayList<>(Arrays.asList(
-            new String[] { "Atlanta", "Baltimore", "Chicago", "Poughkeepsie" }
-        ));
+                "Atlanta", "Baltimore", "Chicago", "Poughkeepsie"));
         LoadAndSortList sut = new LoadAndSortList();
         assertEquals(expected, sut.createListFrom(inputValues));
     }

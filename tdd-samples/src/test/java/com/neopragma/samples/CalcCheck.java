@@ -1,9 +1,4 @@
 package com.neopragma.samples;
-
-/**
- * Roll-your-own test class for Calc.
- */
-
 /**
  * Unit test cases for the sum() method of class Calc
  * written without a unit test library/framework.
