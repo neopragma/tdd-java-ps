@@ -6,6 +6,8 @@ Under ```src/main/java```, class Calc provides a trivial SUT (system under test)
 
 Class ```LoadAndSortList``` represents code one might write to read lines from a file and load each line into a Java List object, then sort the values and return the sorted List. In keeping with the software design principle, Separation of Concerns, the code in this class does not "know about" files; it only performs the processing for each record. 
 
+Class ```Exception1``` can throw exceptions. Test class ```Exception1Test``` demonstrates ways to check that the expected exception was thrown and the exception message is as expected.
+
 Under ```src/test/java``` there are a few unit test examples. Note that the test classes for Calc are intentionally designed to show a test failure (except the PBT example), so you can see how that looks. 
 
 Under ```src/integrationTest/java``` there is a sample integration test written with JUnit. This is not the sort of microtest you would write for TDD, but it is provided for reference. 
@@ -48,7 +50,7 @@ Learning goal: See how to check the functionality of a method that depends on a 
 
 The mock stands in for a BufferedReader instance that would probably be connected to a file in "real life." We are not checking the functionality of the file system, so we don't want the test case to be subject to failures due to file issues.
 
-## Class Exception1 
+## Class Exception1Test 
 
 This class illustrates how to assert that the SUT throws the expected exception when passed certain input values, and to assert the exception message is as expected. 
 
