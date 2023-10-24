@@ -16,7 +16,7 @@ Starter code for an exercise to use TDD for greenfield development. Notes TBD.
 
 ## Module tdd-gildedrose
 
-Starter code for an exertice to use TDD to approach modifications to existing code. Notes TBD
+Starter code for an exercise to use TDD to approach modifications to existing code. Notes TBD
 
 ## Acknowledgements 
 
