@@ -28,9 +28,7 @@ public class Exception1Test {
             Exception1 sut = new Exception1();
             sut.divide(5, 0);
         });
-        String expectedMessage = "For input string";
-        String actualMessage = exception.getMessage();
-        assertEquals("/ by zero", actualMessage);
+        assertEquals("/ by zero", exception.getMessage());
     }
 
     /**
