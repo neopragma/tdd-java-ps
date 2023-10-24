@@ -9,7 +9,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * organization uses a consistent convention.
  * The names of examples are typically longer than the names of production methods.
  * For that reason, people often separate parts of the method names with underscores
- * for readability. Some people routinely use snake case and avoid camel case for examples.
+ * for readability. Some people routinely use snake case and avoid camel case for
+ * test method names.
  */
 public class TestNames {
 
