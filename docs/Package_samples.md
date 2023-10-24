@@ -47,3 +47,9 @@ This class illustrates how to define and use a _mock_ with one of the popular mo
 Learning goal: See how to check the functionality of a method that depends on a collaborator to provide access to an external data source, such as a file, without introducing a dependency on that data source to the test suite. 
 
 The mock stands in for a BufferedReader instance that would probably be connected to a file in "real life." We are not checking the functionality of the file system, so we don't want the test case to be subject to failures due to file issues.
+
+## Class Exception1 
+
+This class illustrates how to assert that the SUT throws the expected exception when passed certain input values, and to assert the exception message is as expected. 
+
+Learning goal: See how to check for exceptions.
