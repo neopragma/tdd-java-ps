@@ -16,6 +16,7 @@ public class TestNames {
 
     /**
      * Example 1. Name does not express a concrete example of adding two integers.
+     * This kind of name is not recommended. The purpose of the test case is unclear.
      */
     @Test
     public void testAddingTwoIntegers() {
