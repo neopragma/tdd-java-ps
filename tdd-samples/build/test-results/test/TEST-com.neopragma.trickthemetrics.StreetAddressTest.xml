@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.neopragma.trickthemetrics.StreetAddressTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-10-25T15:10:08" hostname="Davids-MacBook-Pro.local" time="0.015">
+  <properties/>
+  <testcase name="toString_returnsRawValue()" classname="com.neopragma.trickthemetrics.StreetAddressTest" time="0.011"/>
+  <testcase name="format_returnsFormattedUSAddress()" classname="com.neopragma.trickthemetrics.StreetAddressTest" time="0.001"/>
+  <testcase name="constructor_returnsValidInstance()" classname="com.neopragma.trickthemetrics.StreetAddressTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

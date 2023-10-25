@@ -56,6 +56,12 @@ Learning goal: See how to check the functionality of a method that depends on a 
 
 The mock stands in for a BufferedReader instance that would probably be connected to a file in "real life." We are not checking the functionality of the file system, so we don't want the test case to be subject to failures due to file issues.
 
+## Class StreetAddressTest 
+
+This class illustrates how to trick the test coverage metrics by writing meaningless examples that all pass. It checks class ```StreetAddress```, which contains code that does not work. 
+
+You will see this sort of thing in code bases that you support. Do not do this as a way to satisfy management-imposed test coverage targets. Fix the test suites properly.
+
 ## Class TestNames 
 
 This class provides several examples of test method naming conventions that are commonly used. There are quite a few more, as well. 

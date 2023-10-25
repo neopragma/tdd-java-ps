@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'org.unbroken-dome.test-sets' version '4.0.0'
+    id 'jacoco'
 }
 
 group 'org.example'
@@ -17,10 +18,12 @@ dependencies {
     testImplementation 'net.jqwik:jqwik:1.7.4'
     testImplementation 'org.mockito:mockito-core:5.6.0'
     testImplementation 'org.mockito:mockito-junit-jupiter:5.6.0'
+    testImplementation 'org.jacoco:org.jacoco.core:0.8.11'
 }
 
 test {
     useJUnitPlatform()
+    finalizedBy jacocoTestReport // report is always generated after tests run
 }
 
 testSets {
@@ -29,6 +32,15 @@ testSets {
 
 integrationTest {
     useJUnitPlatform()
+}
+
+jacocoTestReport {
+    reports {
+        dependsOn test // tests are required to run before generating the report
+        xml.required = false
+        csv.required = false
+        html.outputLocation = layout.buildDirectory.dir('jacocoHtml')
+    }
 }
 
 
