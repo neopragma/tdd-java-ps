@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.neopragma.fizzplay.FizzPlayTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2023-10-25T19:25:55" hostname="Davids-MacBook-Pro.local" time="0.04">
+  <properties/>
+  <testcase name="[1] com.neopragma.fizzplay.BruteForceFizzBuzz@6690b9fa" classname="com.neopragma.fizzplay.FizzPlayTest" time="0.029"/>
+  <testcase name="[2] com.neopragma.fizzplay.NaiveFizzBuzz@5b5b59" classname="com.neopragma.fizzplay.FizzPlayTest" time="0.001"/>
+  <testcase name="[3] com.neopragma.fizzplay.TernaryFizzBuzz@1934ad7c" classname="com.neopragma.fizzplay.FizzPlayTest" time="0.0"/>
+  <testcase name="[4] com.neopragma.fizzplay.StreamFizzBuzz@b27b210" classname="com.neopragma.fizzplay.FizzPlayTest" time="0.0"/>
+  <testcase name="[5] com.neopragma.fizzplay.LiterateFizzBuzz@3913f206" classname="com.neopragma.fizzplay.FizzPlayTest" time="0.001"/>
+  <testcase name="[6] com.neopragma.fizzplay.OverlyFactoredFizzBuzz@270d43a7" classname="com.neopragma.fizzplay.FizzPlayTest" time="0.0"/>
+  <testcase name="[7] com.neopragma.fizzplay.ConcatenatedFizzBuzz@53d9826f" classname="com.neopragma.fizzplay.FizzPlayTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
