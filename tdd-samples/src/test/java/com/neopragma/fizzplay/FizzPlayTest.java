@@ -34,7 +34,8 @@ public class FizzPlayTest {
                 Arguments.of(instantiate("StreamFizzBuzz")),
                 Arguments.of(instantiate("LiterateFizzBuzz")),
                 Arguments.of(instantiate("OverlyFactoredFizzBuzz")),
-                Arguments.of(instantiate("ConcatenatedFizzBuzz"))
+                Arguments.of(instantiate("ConcatenatedFizzBuzz")),
+                Arguments.of(instantiate("BrainBuzz"))
         );
     }
 

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BrainF.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">tdd-samples</a> &gt; <a href="index.source.html" class="el_package">com.neopragma.fizzplay</a> &gt; <span class="el_source">BrainF.java</span></div><h1>BrainF.java</h1><pre class="source lang-java linenums">package com.neopragma.fizzplay;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class BrainF {
+    public static final int DEFAULT_MEMORY_SIZE = 0x1000;
+
+    public BrainF(int memorySize, String code, Stream&lt;Byte&gt; in) {
+<span class="nc" id="L13">        this(memorySize, in);</span>
+<span class="nc" id="L14">        addCommands(code);</span>
+<span class="nc" id="L15">    }</span>
+
+<span class="fc" id="L17">    public BrainF(int memorySize, Stream&lt;Byte&gt; in) {</span>
+<span class="fc" id="L18">        memory = new byte[memorySize];</span>
+<span class="fc" id="L19">        input = in.iterator();</span>
+<span class="fc" id="L20">    }</span>
+
+<span class="fc" id="L22">    private final List&lt;BrainFCommand&gt; commands = new ArrayList&lt;&gt;();</span>
+    private final Iterator&lt;Byte&gt; input;
+    private int commandIndex;
+    private final byte[] memory;
+<span class="fc" id="L26">    private final StringBuilder output = new StringBuilder();</span>
+
+    private int memoryIndex;
+
+    public void addCommands(String string) {
+<span class="pc bpc" id="L31" title="1 of 2 branches missed.">        string.chars().mapToObj(i -&gt; BrainFCommand.getCommand((char) i)).filter(obj -&gt; obj != null).forEachOrdered(commands::add);</span>
+<span class="fc" id="L32">    }</span>
+
+    private void changeMemory(int i) {
+<span class="fc" id="L35">        checkMemoryIndex();</span>
+<span class="fc" id="L36">        memory[memoryIndex] += i;</span>
+<span class="fc" id="L37">    }</span>
+
+    private void findMatching(BrainFCommand decrease, BrainFCommand increase, int direction) {
+<span class="fc" id="L40">        int matching = 1;</span>
+        while (true) {
+<span class="fc" id="L42">            commandIndex += direction;</span>
+<span class="fc" id="L43">            BrainFCommand current = commands.get(commandIndex);</span>
+
+<span class="fc bfc" id="L45" title="All 2 branches covered.">            if (current == decrease) {</span>
+<span class="fc" id="L46">                matching--;</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">                if (matching == 0) {</span>
+<span class="fc" id="L48">                    break;</span>
+                }
+            }
+<span class="fc bfc" id="L51" title="All 2 branches covered.">            else if (current == increase) {</span>
+<span class="fc" id="L52">                matching++;</span>
+            }
+<span class="fc" id="L54">        }</span>
+<span class="fc" id="L55">    }</span>
+
+    public byte getMemory() {
+<span class="fc" id="L58">        return memory[memoryIndex];</span>
+    }
+
+    public void runToEnd() {
+<span class="fc bfc" id="L62" title="All 2 branches covered.">        while (commandIndex &lt; commands.size()) {</span>
+<span class="fc" id="L63">            step();</span>
+        }
+<span class="fc" id="L65">    }</span>
+
+    public BrainFCommand step() {
+<span class="pc bpc" id="L68" title="1 of 2 branches missed.">        if (commandIndex &gt;= commands.size()) {</span>
+<span class="nc" id="L69">            return null;</span>
+        }
+<span class="fc" id="L71">        BrainFCommand command = commands.get(commandIndex);</span>
+<span class="fc" id="L72">        perform(command);</span>
+<span class="fc" id="L73">        commandIndex++;</span>
+<span class="fc" id="L74">        return command;</span>
+    }
+
+    public void setMemory(byte value) {
+<span class="nc" id="L78">        memory[memoryIndex] = value;</span>
+<span class="nc" id="L79">    }</span>
+
+    public String getOutput() {
+<span class="fc" id="L82">        return output.toString();</span>
+    }
+
+    public int getMemoryIndex() {
+<span class="nc" id="L86">        return memoryIndex;</span>
+    }
+
+    public int getCommandIndex() {
+<span class="nc" id="L90">        return commandIndex;</span>
+    }
+
+    public void perform(BrainFCommand command) {
+<span class="pc bpc" id="L94" title="1 of 9 branches missed.">        switch (command) {</span>
+            case ADD:
+<span class="fc" id="L96">                changeMemory(1);</span>
+<span class="fc" id="L97">                break;</span>
+            case END_WHILE:
+<span class="fc bfc" id="L99" title="All 2 branches covered.">                if (getMemory() != 0) {</span>
+<span class="fc" id="L100">                    findMatching(BrainFCommand.WHILE, BrainFCommand.END_WHILE, -1);</span>
+                }
+                break;
+            case NEXT:
+<span class="fc" id="L104">                memoryIndex++;</span>
+<span class="fc" id="L105">                checkMemoryIndex();</span>
+<span class="fc" id="L106">                break;</span>
+            case PREVIOUS:
+<span class="fc" id="L108">                memoryIndex--;</span>
+<span class="fc" id="L109">                checkMemoryIndex();</span>
+<span class="fc" id="L110">                break;</span>
+            case READ:
+<span class="nc" id="L112">                byte value = input.next();</span>
+<span class="nc" id="L113">                setMemory(value);</span>
+<span class="nc" id="L114">                break;</span>
+            case SUBSTRACT:
+<span class="fc" id="L116">                changeMemory(-1);</span>
+<span class="fc" id="L117">                break;</span>
+            case WHILE:
+<span class="fc bfc" id="L119" title="All 2 branches covered.">                if (getMemory() == 0) {</span>
+<span class="fc" id="L120">                    findMatching(BrainFCommand.END_WHILE, BrainFCommand.WHILE, 1);</span>
+                }
+                break;
+            case WRITE:
+<span class="fc" id="L124">                char write = (char) getMemory();</span>
+<span class="fc" id="L125">                output.append(write);</span>
+<span class="fc" id="L126">                break;</span>
+            case NONE:
+            default:
+                break;
+        }
+<span class="fc" id="L131">    }</span>
+
+    private void checkMemoryIndex() {
+<span class="pc bpc" id="L134" title="1 of 2 branches missed.">        if (memoryIndex &lt; 0) {</span>
+<span class="nc" id="L135">            memoryIndex += memory.length;</span>
+        }
+<span class="pc bpc" id="L137" title="1 of 2 branches missed.">        if (memoryIndex &gt;= memory.length) {</span>
+<span class="nc" id="L138">            memoryIndex -= memory.length;</span>
+        }
+<span class="fc" id="L140">    }</span>
+
+    public byte[] getMemoryArray(int fromIndex, int length) {
+<span class="nc" id="L143">        return Arrays.copyOfRange(memory, fromIndex, fromIndex + length);</span>
+    }
+
+    public void setCommands(String text) {
+<span class="nc" id="L147">        commands.clear();</span>
+<span class="nc" id="L148">        addCommands(text);</span>
+<span class="nc" id="L149">    }</span>
+
+    public void reset() {
+<span class="nc" id="L152">        Arrays.fill(memory, (byte) 0);</span>
+<span class="nc" id="L153">        commandIndex = 0;</span>
+<span class="nc" id="L154">        memoryIndex = 0;</span>
+<span class="nc" id="L155">        output.setLength(0);</span>
+<span class="nc" id="L156">    }</span>
+
+    public int getMemorySize() {
+<span class="nc" id="L159">        return memory.length;</span>
+    }
+
+    public byte getMemory(int index) {
+<span class="nc" id="L163">        return memory[index];</span>
+    }
+
+    public static BrainF createFromCodeAndInput(int memorySize, String code, String input) {
+<span class="nc" id="L167">        return createFromCodeAndInput(memorySize, code, input.chars().mapToObj(i -&gt; (byte) i ));</span>
+    }
+
+    public static BrainF createFromCodeAndInput(int memorySize, String code, Stream&lt;Byte&gt; inputStream) {
+<span class="nc" id="L171">        return new BrainF(DEFAULT_MEMORY_SIZE, code, inputStream);</span>
+    }
+
+    public static BrainF createFromCode(String code) {
+<span class="nc" id="L175">        return createFromCodeAndInput(DEFAULT_MEMORY_SIZE, code, &quot;&quot;);</span>
+    }
+
+    public static BrainF createFromCode(int memorySize, String code) {
+<span class="nc" id="L179">        return createFromCodeAndInput(memorySize, code, &quot;&quot;);</span>
+    }
+
+    public static BrainF createWithDefaultSize() {
+<span class="fc" id="L183">        return createUsingSystemInputWithMemorySize(DEFAULT_MEMORY_SIZE);</span>
+    }
+
+    public static BrainF createUsingSystemInputWithMemorySize(int memorySize) {
+<span class="fc" id="L187">        Stream&lt;Byte&gt; in = Stream.generate(() -&gt; {</span>
+            try {
+<span class="nc" id="L189">                return (byte) System.in.read();</span>
+            }
+<span class="nc" id="L191">            catch (Exception e) {</span>
+<span class="nc" id="L192">                throw new RuntimeException(e);</span>
+            }
+        });
+<span class="fc" id="L195">        return new BrainF(memorySize, in);</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
