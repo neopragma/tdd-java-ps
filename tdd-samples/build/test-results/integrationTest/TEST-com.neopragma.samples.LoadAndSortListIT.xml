@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.neopragma.samples.LoadAndSortListIT" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-10-25T12:40:26" hostname="Davids-MacBook-Pro.local" time="0.022">
+<testsuite name="com.neopragma.samples.LoadAndSortListIT" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-10-31T21:05:30" hostname="Davids-MacBook-Pro.local" time="0.018">
   <properties/>
-  <testcase name="itReturnsTheInputValuesAsASortedList()" classname="com.neopragma.samples.LoadAndSortListIT" time="0.022">
+  <testcase name="itReturnsTheInputValuesAsASortedList()" classname="com.neopragma.samples.LoadAndSortListIT" time="0.018">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;[Atlanta, Baltimore, Chicago, Poughkeepsie]&gt; but was: &lt;[Atlanta, Baltimore, Chicago, Hartford]&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;[Atlanta, Baltimore, Chicago, Poughkeepsie]&gt; but was: &lt;[Atlanta, Baltimore, Chicago, Hartford]&gt;
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at app//org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)

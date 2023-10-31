@@ -12,7 +12,7 @@ Starter code for an exercise to use TDD for greenfield development.
 
 [Notes](docs/fizzbuzz.md).
 
-[Examples](docs/Package_fizzplay.md)
+[Examples](docs/Package_fizzplay.md).
 
 ## Module tdd-rpn
 
@@ -25,6 +25,65 @@ Starter code for an exercise to use TDD for greenfield development.
 Starter code for an exercise to use TDD to approach modifications to existing code. 
 
 [Notes](gilded-rose.md).
+
+## Gradle command line execution
+
+Run from the module subdirectory.
+
+```shell 
+cd [project-root]
+cd tdd-samples 
+./gradlew ...
+```
+
+### Run unit tests 
+
+```shell
+./gradlew test
+```
+
+### Unit test results
+
+```shell
+[project-root]/tdd-java-ps/tdd-samples/build/reports/tests/test/index.html
+```
+
+### Run integration tests
+
+```shell
+./gradlew integrationTest
+```
+
+### Integration test results
+
+```shell
+[project-root]/tdd-java-ps/tdd-samples/build/reports/tests/integrationTest/index.html
+```
+
+### Check unit test coverage
+
+```shell
+./gradlew jacocoTestCoverageVerification
+```
+
+### Unit test coverage report 
+
+```shell
+[project-root]/tdd-java-ps/tdd-samples/build/jacocoHtml/index.html
+```
+
+### Run Jacoco report
+
+```shell
+./gradlew jacocoIntegrationTestReport
+```
+
+### Jacoco test report
+
+```shell
+[project-root]/tdd-java-ps/tdd-samples/build/reports/jacoco/jacocoIntegrationTestReport/html/index.html
+```
+
 
 ## Acknowledgements 
 

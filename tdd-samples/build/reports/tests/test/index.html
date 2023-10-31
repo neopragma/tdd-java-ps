@@ -20,13 +20,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">8</div>
+<div class="counter">33</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">5</div>
 <p>failures</p>
 </div>
 </td>
@@ -38,7 +38,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.039s</div>
+<div class="counter">0.988s</div>
 <p>duration</p>
 </div>
 </td>
@@ -47,8 +47,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">84%</div>
 <p>successful</p>
 </div>
 </td>
@@ -58,13 +58,41 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Packages</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Classes</a>
+<a href="#tab1">Packages</a>
+</li>
+<li>
+<a href="#tab2">Classes</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<ul class="linkList">
+<li>
+<a href="classes/com.neopragma.checksetup.TrivialTest.html">TrivialTest</a>.
+<a href="classes/com.neopragma.checksetup.TrivialTest.html#is_junit_set_up()">is_junit_set_up()</a>
+</li>
+<li>
+<a href="classes/com.neopragma.samples.CalcParameterizedTest.html">CalcParameterizedTest</a>.
+<a href="classes/com.neopragma.samples.CalcParameterizedTest.html#itSumsValues(Double[], Double)[1]">[1] [1.5, 2.0], 2.5</a>
+</li>
+<li>
+<a href="classes/com.neopragma.samples.CalcRefactoredTest.html">CalcRefactoredTest</a>.
+<a href="classes/com.neopragma.samples.CalcRefactoredTest.html#it_sums_two_values()">it_sums_two_values()</a>
+</li>
+<li>
+<a href="classes/com.neopragma.samples.CalcTest.html">CalcTest</a>.
+<a href="classes/com.neopragma.samples.CalcTest.html#it_sums_two_values()">it_sums_two_values()</a>
+</li>
+<li>
+<a href="classes/com.neopragma.samples.Exception1Test.html">Exception1Test</a>.
+<a href="classes/com.neopragma.samples.Exception1Test.html#divide_by_zero()">divide_by_zero()</a>
+</li>
+</ul>
+</div>
+<div id="tab1" class="tab">
 <h2>Packages</h2>
 <table>
 <thead>
@@ -79,19 +107,49 @@
 </thead>
 <tbody>
 <tr>
+<td class="failures">
+<a href="packages/com.neopragma.checksetup.html">com.neopragma.checksetup</a>
+</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.016s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
 <td class="success">
 <a href="packages/com.neopragma.fizzplay.html">com.neopragma.fizzplay</a>
 </td>
 <td>8</td>
 <td>0</td>
 <td>0</td>
-<td>0.039s</td>
+<td>0.019s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="packages/com.neopragma.samples.html">com.neopragma.samples</a>
+</td>
+<td>21</td>
+<td>4</td>
+<td>0</td>
+<td>0.950s</td>
+<td class="failures">80%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="packages/com.neopragma.trickthemetrics.html">com.neopragma.trickthemetrics</a>
+</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0.003s</td>
 <td class="success">100%</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tab1" class="tab">
+<div id="tab2" class="tab">
 <h2>Classes</h2>
 <table>
 <thead>
@@ -106,13 +164,103 @@
 </thead>
 <tbody>
 <tr>
+<td class="failures">
+<a href="classes/com.neopragma.checksetup.TrivialTest.html">com.neopragma.checksetup.TrivialTest</a>
+</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0.016s</td>
+<td class="failures">0%</td>
+</tr>
+<tr>
 <td class="success">
 <a href="classes/com.neopragma.fizzplay.FizzPlayTest.html">com.neopragma.fizzplay.FizzPlayTest</a>
 </td>
 <td>8</td>
 <td>0</td>
 <td>0</td>
-<td>0.039s</td>
+<td>0.019s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/com.neopragma.samples.CalcParameterizedTest.html">com.neopragma.samples.CalcParameterizedTest</a>
+</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0.015s</td>
+<td class="failures">50%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.neopragma.samples.CalcPropertyTest.html">com.neopragma.samples.CalcPropertyTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.167s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/com.neopragma.samples.CalcRefactoredTest.html">com.neopragma.samples.CalcRefactoredTest</a>
+</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0.001s</td>
+<td class="failures">50%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/com.neopragma.samples.CalcTest.html">com.neopragma.samples.CalcTest</a>
+</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0s</td>
+<td class="failures">50%</td>
+</tr>
+<tr>
+<td class="failures">
+<a href="classes/com.neopragma.samples.Exception1Test.html">com.neopragma.samples.Exception1Test</a>
+</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0.002s</td>
+<td class="failures">66%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.neopragma.samples.LoadAndSortListTest.html">com.neopragma.samples.LoadAndSortListTest</a>
+</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0.760s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.neopragma.samples.TestNames.html">com.neopragma.samples.TestNames</a>
+</td>
+<td>10</td>
+<td>0</td>
+<td>0</td>
+<td>0.005s</td>
+<td class="success">100%</td>
+</tr>
+<tr>
+<td class="success">
+<a href="classes/com.neopragma.trickthemetrics.StreetAddressTest.html">com.neopragma.trickthemetrics.StreetAddressTest</a>
+</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0.003s</td>
 <td class="success">100%</td>
 </tr>
 </tbody>
@@ -126,7 +274,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at Oct 31, 2023, 8:27:01 AM</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at Oct 31, 2023, 2:11:40 PM</p>
 </div>
 </div>
 </body>

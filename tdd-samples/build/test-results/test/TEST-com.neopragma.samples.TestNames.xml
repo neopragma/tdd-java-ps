@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.neopragma.samples.TestNames" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-10-31T21:11:39" hostname="Davids-MacBook-Pro.local" time="0.005">
+  <properties/>
+  <testcase name="when_accountHasFraudHold_then_transferFunds_returns_ContactProviderMessage()" classname="com.neopragma.samples.TestNames" time="0.0"/>
+  <testcase name="testAddingFiveAndSeven()" classname="com.neopragma.samples.TestNames" time="0.001"/>
+  <testcase name="it_returns_12_when_adding_5_and_7()" classname="com.neopragma.samples.TestNames" time="0.001"/>
+  <testcase name="addIntegers_returns_12_when_adding_5_and_7()" classname="com.neopragma.samples.TestNames" time="0.0"/>
+  <testcase name="adding_FiveAndSeven_Should_ResultInTwelve()" classname="com.neopragma.samples.TestNames" time="0.001"/>
+  <testcase name="transferFunds_returns_ContactProviderMessage_when_accountHasFraudHold()" classname="com.neopragma.samples.TestNames" time="0.0"/>
+  <testcase name="given_accountHasFraudHold_when_transferFunds_isCalled_then_it_returns_ContactProviderMessage()" classname="com.neopragma.samples.TestNames" time="0.001"/>
+  <testcase name="shouldReturn_12_when_adding_5_and_7()" classname="com.neopragma.samples.TestNames" time="0.0"/>
+  <testcase name="addingFiveAndSevenShouldResultInTwelve()" classname="com.neopragma.samples.TestNames" time="0.001"/>
+  <testcase name="testAddingTwoIntegers()" classname="com.neopragma.samples.TestNames" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
