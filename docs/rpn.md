@@ -12,7 +12,7 @@ The way we usually write that expression is called _infix notation_, because the
 
 Why "reverse?" It's the reverse of _prefix notation_, which is also called _Polish notation_: 
 
-+ 4 5 
+\+ 4 5 
 
 Complex arithmetic expressions can be written in postfix notation without the need for parentheses. 
 
