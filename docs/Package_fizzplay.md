@@ -6,7 +6,7 @@ The ```fizzplay``` package contains several implementations of FizzBuzz as well 
 
 **_First_**, many people get carried away trying to write clever implementations. Some want to write a one-line solution. Others want to exercise some particular feature of the programming language they're using, even if it isn't necessary to write FizzBuzz. Still others want to write a solution that's intentionally hard to understand, just for fun. 
 
-So, to help you get that out of your system, I thought it would be helpful to provide several FizzBuzz solutions that elevate cleverness to the level of absurdity. The most absurd solutions are the extremes - ```BruteForceFizzBuzz```, which just returns the expected value, hard-coded; and ```BrainBuzz```, which runs a Brainf\*ck interpreter written in Jave to execute FizzBuzz written in Brainf\*ck. If that isn't absurd enough for you, then I give up.
+So, to help you get that out of your system, I thought it would be helpful to provide several FizzBuzz solutions that elevate cleverness to the level of absurdity. The most absurd solutions are the extremes - ```BruteForceFizzBuzz```, which just returns the expected value, hard-coded; and ```BrainBuzz```, which runs a Brainf\*ck interpreter written in Java to execute FizzBuzz written in Brainf\*ck. If that isn't absurd enough for you, then I give up.
 
 **_Second_**, a common misconception about TDD is that the test suite locks in the design of the production code because any change to the production code will break the tests. 
 
@@ -14,7 +14,7 @@ When I hear/read someone say this, I know the speaker/author does not understand
 
 (1) When you drive the production code from test cases, you always write the test cases that express the desired functionality _before_ you change any of the production code. Then you change the production code to make the desired functionality a reality. It is literally impossible to break tests by changing production code, because you never modify production code before you've adjusted the test suite.
 
-In fact, the test suite is your safety net for making changes to the production code. If a test case breaks, it's because you made a mistake changing the production code. 
+In fact, the test suite is your safety net for making changes to the production code. If a test case breaks, it's because you made a mistake changing the production code. In that case, you definitely _want_ the test case to fail. The failure provides early warning of a problem that could be hard to diagnose if it reached production.
 
 (2) It's possible to write test cases that depend on a particular implementation of the production code. When we do that, the test suite can't function as a safety net for making intentional changes in the code's behavior or for refactoring the code. 
 

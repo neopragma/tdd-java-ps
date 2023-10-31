@@ -8,7 +8,7 @@ FizzBuzz originated as a children's arithmetic game. A group of children would c
 
 The problem is easily adapted to programming. The basic rules are:
 
-Print or display a list of strings corresponding to a sequence of positive integers. For integers evenly divisible by 3, output the string "Fizz". For those evenly divisible by 5, output "Buzz". For those evenly divisible by both 3 and 5, output "FizzBuzz". For all other values, output the string representation of the integer. 
+Print or display a list of strings corresponding to a sequence of positive integers. For integers evenly divisible by 3, output the string "Fizz". For those evenly divisible by 5, output "Buzz". For those evenly divisible by both 3 and 5, output "FizzBuzz". For all other values, output the string representation of the integer. Yelling is optional.
 
 So you'd get something like this for the range 1 through 15:
 
@@ -16,7 +16,7 @@ So you'd get something like this for the range 1 through 15:
 2  
 Fizz  
 4  
-Buzz 
+Buzz  
 Fizz  
 7  
 8  
@@ -34,4 +34,4 @@ When using FizzBuzz for a code dojo, people often add requirements after partici
 
 Depending on how rapidly you progress with the exercise, we might play with some additional requirements. Basically, we just need to support the basic rules for values from 1 to 100 inclusive.
 
-Something to note about _separation of concerns_ - printing or displaying the values is one concern (I/O) and determining whether to substitute a word for the input value is a different concern (application logic). So, we want our solution to output an array of strings. If we really want to see the output printed, we should write a separate Java main class to do that.
+Something to note about _separation of concerns_ - printing or displaying the values is one concern (I/O) and determining whether to substitute a word for the input value is a different concern (application logic). So, we want our solution to output an array or list of strings. If we really want to see the output printed, we should write a separate Java main class to do that.
