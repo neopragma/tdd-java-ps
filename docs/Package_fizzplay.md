@@ -6,7 +6,7 @@ The ```fizzplay``` package contains several implementations of FizzBuzz as well 
 
 **_First_**, many people get carried away trying to write clever implementations. Some want to write a one-line solution. Others want to exercise some particular feature of the programming language they're using, even if it isn't necessary to write FizzBuzz. Still others want to write a solution that's intentionally hard to understand, just for fun. 
 
-So, to help you get that out of your system, I thought it would be helpful to provide several FizzBuzz solutions that elevate cleverness to the level of absurdity. The most absurd solutions are the extremes - ```BruteForceFizzBuzz```, which just returns the expected value, hard-coded; and ```BrainBuzz```, which runs a Brainf\*ck interpreter written in Jave to execute FizzBuzz written in Brainf\*ck. 
+So, to help you get that out of your system, I thought it would be helpful to provide several FizzBuzz solutions that elevate cleverness to the level of absurdity. The most absurd solutions are the extremes - ```BruteForceFizzBuzz```, which just returns the expected value, hard-coded; and ```BrainBuzz```, which runs a Brainf\*ck interpreter written in Jave to execute FizzBuzz written in Brainf\*ck. If that isn't absurd enough for you, then I give up.
 
 **_Second_**, a common misconception about TDD is that the test suite locks in the design of the production code because any change to the production code will break the tests. 
 
