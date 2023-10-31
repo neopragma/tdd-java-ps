@@ -8,15 +8,23 @@ Examples for coding various unit/microtests using JUnit, Mockito, and JQwik. [No
 
 ## Module tdd-fizzbuzz 
 
-Starter code for an exercise to use TDD for greenfield development. Notes TBD.
+Starter code for an exercise to use TDD for greenfield development. 
+
+[Notes](docs/fizzbuzz.md).
+
+[Examples](docs/Package_fizzplay.md)
 
 ## Module tdd-rpn
 
-Starter code for an exercise to use TDD for greenfield development. Notes TBD.
+Starter code for an exercise to use TDD for greenfield development. 
+
+[Notes](docs/rpn.md).
 
 ## Module tdd-gildedrose
 
-Starter code for an exercise to use TDD to approach modifications to existing code. Notes TBD
+Starter code for an exercise to use TDD to approach modifications to existing code. 
+
+[Notes](gilded-rose.md).
 
 ## Acknowledgements 
 
