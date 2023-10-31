@@ -25,3 +25,5 @@ replay_pid*
 
 # Mac thumnail files
 .DS_Store 
+
+**build**
