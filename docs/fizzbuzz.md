@@ -30,8 +30,8 @@ FizzBuzz
 
 By default, we operate on the integers from 1 through 100 inclusive.
 
-When using FizzBuzz for a code dojo, people often add requirements after participants have completed the basic functionality, like outputting "Baz" for numbers evenly divisible by seven, or allowing for any range of integers to be input at run time.
+When using FizzBuzz for a code dojo, people often add requirements after participants have completed the basic functionality, like outputting "Baz" for numbers evenly divisible by seven, or allowing for any range of integers to be input at run time. Another potentially interesting question is what to do about the value, zero. Mathematically, it's evenly divisible by every number; but does that make sense to a human?
 
-Something to note about _separation of concerns_ - printing or displaying the values is one concern (I/O) and determining whether to substitute a word for the input value is a different concern (application logic). So, we want our solution to output an array of strings. If we really want to see the output printed, we should write a separate Java main class.
+Depending on how rapidly you progress with the exercise, we might play with some additional requirements. Basically, we just need to support the basic rules for values from 1 to 100 inclusive.
 
-
+Something to note about _separation of concerns_ - printing or displaying the values is one concern (I/O) and determining whether to substitute a word for the input value is a different concern (application logic). So, we want our solution to output an array of strings. If we really want to see the output printed, we should write a separate Java main class to do that.
