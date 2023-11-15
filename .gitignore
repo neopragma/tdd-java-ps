@@ -26,11 +26,11 @@ replay_pid*
 # Mac thumnail files
 .DS_Store 
 
-**build**
+*/build
 
 # IntelliJ IDEA
-.idea 
-.project
+*/.idea 
 
 # Eclipse IDE
-.classpath
+*/.project
+*/.classpath
